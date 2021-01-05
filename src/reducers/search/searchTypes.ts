@@ -1,0 +1,35 @@
+import { ReactSelectArray } from '../../utils/localTypes';
+import { Data } from '../../utils/dataTypes';
+
+export type SearchState = {
+	searchType: null;
+	dataRequested: number | string;
+	minutesRequested: number | string;
+	messagesRequested: number | string;
+	searchText: Array<string>;
+	basicSearch: Array<{ data: Array<Data>; type: string }>;
+	upFrontSlider: number;
+	upFrontCost: number | string;
+	monthlySlider: number;
+	monthlyCost: number | string;
+	loading: boolean;
+	phones: Array<string>;
+	providers?: Array<string>;
+	contracts?: Array<string>;
+	phoneText: ReactSelectArray | string;
+	providersText: ReactSelectArray | string;
+	contractsText: ReactSelectArray | string;
+	searchCriteria: string;
+	checkbox1: boolean;
+	checkbox2: boolean;
+	checkbox3: boolean;
+	page: number;
+	nextPageURL: string;
+	prevPageURL: string;
+	searchNumber: number;
+	allOS: boolean;
+	ios: boolean;
+	android: boolean;
+	operatingSystem: string;
+	similarResults?: Array<{ data: Array<Data>; type: string }>;
+};
