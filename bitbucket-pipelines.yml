@@ -20,7 +20,7 @@ pipelines:
          script:
          - pipe: atlassian/heroku-deploy:1.1.3
            variables:
-             HEROKU_API_KEY: 'd044c532-1bb9-473c-8f6a-436a8554986e'
+             HEROKU_API_KEY: $HEROKU_KEY
              HEROKU_APP_NAME: 'speedymobile-test'
              ZIP_FILE: 'application.tar.gz'
     master:
